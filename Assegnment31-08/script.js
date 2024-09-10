@@ -30,8 +30,3 @@ let R=6;
 let T=4;
 let compound=profit*(1+(R/100))^T;
 
-
-
-
-
-
