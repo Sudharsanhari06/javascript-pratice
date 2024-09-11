@@ -1,12 +1,12 @@
-checkNumber(-5);
-checkNumber(0);
-checkNumber(10);//function only one parameter
-function checkNumber(num) {
-  if (num < 0)//remove the semi colon // change the lessthan operator
-  console.log("Negative");
-  else if (num > 0) {// change the greatorthan operator
-    console.log("positive");
-  } else {
-    console.log("Zero");
+let n=10;//declare the variable 
+function sumNumbers(n) {
+    let sum = 0;
+    let i = 0;
+    while (i<=n) {//add equal operator
+      sum += i;
+      i++;
+    }
+    return sum;
   }
-}
+  let result=sumNumbers(n);
+  console.log(result)

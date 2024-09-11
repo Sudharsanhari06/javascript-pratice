@@ -1,5 +1,11 @@
-let count = 1;
-while (count <=100) {//add less than or equal 100
- console.log("Counting down: " + count);
- count = count + 1;
+let n=5;
+function  calculateFactorial(n){
+    let i=1;
+    let fact=1;
+    while(i<=n){
+        fact=i*fact;//6//24
+        i++;
+    }
+    console.log(fact);
 }
+calculateFactorial(n);

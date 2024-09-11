@@ -1,6 +1,15 @@
-let temperature = 30;
-if (temperature == 20) {//add the assign equal operator
- console.log("It's cold outside.");
-} else {
- console.log("It's warm outside.");
+let n=6;
+function evenNumbers(n){
+let i=1;
+while(i<=n){
+    if(i%2==0){
+        console.log(i);
+        i=i+2;
+    }
+    else{
+        i=i+1;
+    }
 }
+}
+evenNumbers(n);
+
