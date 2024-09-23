@@ -1,9 +1,10 @@
 
-
+// divisible by 7
 function isMultipleOfSeven(N) {
     if (N%7 == 0) { 
         console.log("Yes");
-    } else {
+    }
+     else {
         console.log("No");
     }
 }
