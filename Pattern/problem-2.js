@@ -1,5 +1,5 @@
 const n = 5;
-pattern15(n);
+pattern14(n);
 
 function pattern1(n) {
     for (let row = 1; row <= n; row++) {
@@ -9,6 +9,7 @@ function pattern1(n) {
         console.log();
     }
 }
+
 function pattern2(n) {
     for (let row = 1; row <= n; row++) {
         for (let col = 1; col <= row; col++) {
@@ -17,6 +18,7 @@ function pattern2(n) {
         console.log();
     }
 }
+
 function pattern3(n) {
     for (let row = 1; row <= n; row++) {
         for (let col = 1; col <= (n - row) + 1; col++) {
@@ -85,7 +87,7 @@ function pattern9(n) {
         for (space = 1; space <= row - 1; space++) {
             process.stdout.write(" ");
         }
-        for (let col = 1; col <= (n * 2) - row - (row - 1); col++) {
+        for (let col = 1; col <= ((n * 2) - row)- (row - 1); col++) {
             process.stdout.write("*");
         }
         console.log();
@@ -103,6 +105,7 @@ function pattern10(n) {
         console.log();
     }
 }
+
 function pattern11(n) {
     for (let row = 1; row <= n; row++) {
         for (let space = 1; space <= row - 1; space++) {
@@ -114,7 +117,6 @@ function pattern11(n) {
         console.log();
     }
 }
-
 
 function pattern12(n) {
     for (let row = 1; row <= n * 2; row++) {
@@ -129,7 +131,6 @@ function pattern12(n) {
         console.log();
     }
 }
-
 
 function pattern13(n) {
     for (let row = 1; row <= n; row++) {
@@ -148,7 +149,6 @@ function pattern13(n) {
     }
 
 }
-
 
 
 function pattern14(n){
@@ -184,34 +184,33 @@ function pattern14(n){
 //         console.log();
 //     }
 // }
-function pattern15(n) {
-    for (let row = 1; row <= (n * 2) - 1; row++) {
-        let totalSpace = row <= n ? n - row : row - n;
-        let totalCol = row <= n ? row : (n * 2) - row;
 
-        // Print spaces
-        for (let space = 1; space <= totalSpace; space++) {
-            process.stdout.write(" ");
-        }
 
-        // Print stars and spaces between them
-        for (let col = 1; col <= totalCol; col++) {
-            if (col === 1 || col === totalCol) {
-                process.stdout.write("*");
-            } else {
-                process.stdout.write(" ");
-            }
+// function pattern15(n) {
+//     for (let row = 1; row <= (n * 2) - 1; row++) {
+//         let totalSpace = row <= n ? n - row : row - n;
+//         let totalCol = row <= n ? row : (n * 2) - row;
+
+//         // Print spaces
+//         for (let space = 1; space <= totalSpace; space++) {
+//             process.stdout.write(" ");
+//         }
+
+//         // Print stars and spaces between them
+//         for (let col = 1; col <= totalCol; col++) {
+//             if (col === 1 || col === totalCol) {
+//                 process.stdout.write("*");
+//             } else {
+//                 process.stdout.write(" ");
+//             }
     
-            if (col < totalCol) {
-                process.stdout.write(" ");
-            }
-        }
-        console.log();
-    }
-}
-
-
-
+//             if (col < totalCol) {
+//                 process.stdout.write(" ");
+//             }
+//         }
+//         console.log();
+//     }
+// }
 
 function pattern20(n) {
     for (let row = 1; row <= n; row++) {
@@ -230,8 +229,6 @@ function pattern20(n) {
         console.log();
     }
 }
-
-
 
 function pattern28(n){
     for(let row=1;row<=(n*2)-1;row++){
