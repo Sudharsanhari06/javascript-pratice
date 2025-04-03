@@ -1,7 +1,5 @@
 // without third variable
 // use the arithmetic operator
-
-
 let a=5;
 let b=4;
 a=a+b;//a=9

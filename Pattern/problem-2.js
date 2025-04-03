@@ -1,5 +1,5 @@
 const n = 5;
-pattern14(n);
+pattern9(n);
 
 function pattern1(n) {
     for (let row = 1; row <= n; row++) {
